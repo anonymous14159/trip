@@ -91,12 +91,8 @@ body {
 }
 
 .media-group--more {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
-  padding: 14px;
-  border: 1px solid rgba(110, 130, 160, 0.18);
-  border-radius: 24px;
-  background: rgba(255, 255, 255, 0.58);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
 }
 
 .media-card {
@@ -106,19 +102,6 @@ body {
   background: rgba(255, 255, 255, 0.82);
   box-shadow: 0 22px 44px rgba(41, 60, 89, 0.08);
   backdrop-filter: blur(10px);
-}
-
-.media-card--more {
-  padding: 0;
-  border: 0;
-  border-radius: 0;
-  background: transparent;
-  box-shadow: none;
-  backdrop-filter: none;
-}
-
-.media-card--more video {
-  border-radius: 12px;
 }
 
 .media-card video,
