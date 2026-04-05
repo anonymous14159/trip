@@ -15,10 +15,15 @@
     <section class="hero-block">
       <h1>Learning Transferable Interaction Primitives from Game Videos for Humanoids</h1>
       <p class="eyebrow">Anonymous Submission</p>
-      <p class="subhead">Showcase of AI-generated videos as alternative training data (Left: generated video. Right: extracted motion.)</p>
     </section>
 
     <section class="gallery" aria-label="Video gallery">
+      <section class="content-section">
+        <div class="section-header">
+          <p class="subhead">AI-generated videos as alternative training data</p>
+          <p class="section-note">Left: generated video. Right: extracted motion.</p>
+        </div>
+
       <!--
       <section class="media-group">
         <article class="media-card">
@@ -122,6 +127,48 @@
         </article>
 
         <p class="group-caption">More video showcases.</p>
+      </section>
+      </section>
+
+      <div class="section-divider" aria-hidden="true"></div>
+
+      <section class="content-section">
+        <div class="section-header">
+          <p class="subhead">Tolerance to occlusion</p>
+          <p class="section-note">Top: occlusion with moving masks. Down: naturally occluded videos.</p>
+        </div> 
+
+        <section class="media-group media-group--occlusion-stack">
+          <article class="media-card media-card--occlusion">
+            <video controls preload="metadata" playsinline>
+              <source src="./static/videos/occ1.mp4" type="video/mp4">
+            </video>
+          </article>
+
+          <article class="media-card media-card--occlusion">
+            <video controls preload="metadata" playsinline>
+              <source src="./static/videos/occ2.mp4" type="video/mp4">
+            </video>
+          </article>
+
+          <p class="group-caption">Synthetic occlusion with moving masks. The pose reconstruction remains stable and usable despite partial visual blockage.</p>
+        </section>
+
+        <section class="media-group media-group--occlusion-stack">
+          <article class="media-card media-card--occlusion">
+            <video controls preload="metadata" playsinline>
+              <source src="./static/videos/occ3.mp4" type="video/mp4">
+            </video>
+          </article>
+
+          <article class="media-card media-card--occlusion">
+            <video controls preload="metadata" playsinline>
+              <source src="./static/videos/occ4.mp4" type="video/mp4">
+            </video>
+          </article>
+
+          <p class="group-caption">Naturally occluded videos, including structural occlusions such as stair handrails. Existing pose reconstruction methods handle these cases well and still recover plausible motion.</p>
+        </section>
       </section>
     </section>
   </main>
