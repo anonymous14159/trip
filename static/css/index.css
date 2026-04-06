@@ -95,6 +95,11 @@ body {
   gap: 20px;
 }
 
+.media-group--policy {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
 .media-group--occlusion {
   grid-template-columns: 1fr;
   gap: 22px;
@@ -155,6 +160,10 @@ body {
   text-align: center;
 }
 
+.group-caption--section {
+  margin: -6px 2px 2px;
+}
+
 .caption {
   margin: 10px 2px 2px;
   color: #23354d;
@@ -171,6 +180,7 @@ body {
   .media-group,
   .media-group--triple,
   .media-group--more,
+  .media-group--policy,
   .media-group--occlusion-pair,
   .media-group--occlusion-stack {
     grid-template-columns: 1fr;
